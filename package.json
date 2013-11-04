@@ -1,0 +1,21 @@
+{
+  "name": "ots-heading-parser",
+  "version": "0.1.0",
+  "description": "Reads the contents of a file from The Sports Network and checks the <heading> element to figure out what type of file it is.",
+  "author": "Clay Simmons <csimmons@onetwosee.com>",
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cletustboone/ots-heading-parser.git"
+  },
+  "bin": {
+    "ots-hp": "bin/reader.js"
+  },
+  "dependencies": {
+    "nopt": "~2.1.2",
+    "split": "~0.2.10"
+  },
+  "devDependencies": {
+    "grunt-release": "~0.6.0"
+  }
+}

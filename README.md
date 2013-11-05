@@ -6,7 +6,8 @@ Looks at a file and spits back what's in the heading element. It's meant to tell
 
 * `--file`: the relative or absolute path to the file of interest
 * `--filetype`: `pbp|other` pbp can let us know that we don't need to read the file in and examine the `<heading>` element because it's a known play by play file.
-* `sport`: `nfl|mlb` if the sport type is already known, specify it here.
+* `--sport`: `nfl|mlb` if the sport type is already known, specify it here.
+* `--delim`: Defaults to `|||`, but you can configure it here. WARNING: If filenames contain the delimiter, weird things can happen.
 * `--in0`: present or not. If this argument is present, it lets us know that the `stdin` input is delimited by `\0` nulls instead of `\n` newlines.
 * `--out0`: present of not. If present, delimit the output with `\0` nulls instead of `\n` newlines.
 

@@ -9,7 +9,7 @@ split = require("split"),
 inputReader;
 
 inputReader = new InputReader( options )
-  .pipe( new FileReader() )
+  .pipe( new FileReader( options ) )
   .pipe( split() )
   .pipe( new HeadingChecker( options ) )
   .pipe( process.stdout );

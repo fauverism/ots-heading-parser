@@ -10,6 +10,5 @@ inputReader;
 
 inputReader = new InputReader( options )
   .pipe( new FileReader( options ) )
-  .pipe( split() )
   .pipe( new HeadingChecker( options ) )
   .pipe( process.stdout );
